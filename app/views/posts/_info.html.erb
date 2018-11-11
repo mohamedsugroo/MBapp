@@ -1,0 +1,22 @@
+<div class="article_source">
+    <div class="row">
+        <div class="col">
+                <div class="avatar" style="background-image: url(<%= @post.author_avatars["96"]%>)">
+                </div>
+                <div class="author">
+                    <strong class="author_name"><%= @post.author %></strong> <br>
+                    <small>
+                        <strong class="source_name">
+                            <% @post.sites.each do |site| %>
+                                <%= site.name %>
+                            <% end %>
+                        </strong>
+                    </small>
+                </div>
+        </div>
+        <div class="col align-right">
+                <span class="badge badge-light"><%= time_ago_in_words(@post.created_at) %></span>
+        </div>
+    </div>
+    
+</div>

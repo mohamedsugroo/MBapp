@@ -1,0 +1,36 @@
+<div class="container">
+<p id="notice"><%= notice %></p>
+
+<h1>Adverts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Ad code</th>
+      <th>Start date</th>
+      <th>End date</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @adverts.each do |advert| %>
+      <tr>
+        <td><%= advert.name %></td>
+        <td><%= advert.ad_code %></td>
+        <td><%= advert.start_date %></td>
+        <td><%= advert.end_date %></td>
+        <td><%= link_to 'Show', advert %></td>
+        <td><%= link_to 'Edit', edit_advert_path(advert) %></td>
+        <td><%= link_to 'Destroy', advert, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Advert', new_advert_path %>
+
+</div>

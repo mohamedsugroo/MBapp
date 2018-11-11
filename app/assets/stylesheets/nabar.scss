@@ -1,0 +1,79 @@
+@import 'colors';
+
+aside.navbar {
+    width: 80px;
+    height: 100vh;
+    background: #f1f1f1;
+    position: fixed;
+    float: left;
+    color: white;
+    overflow: hidden;
+    z-index: 101;
+    a {
+        text-decoration: none;
+        color: inherit;
+        &:hover {
+            text-decoration: none;
+            color: inherit
+        }
+    }
+
+    nav.sideNav {
+        ul {
+            padding: 0;
+            margin: 0;
+            li {
+                list-style: none;
+                width: 40px;
+                height: 40px;
+                border-radius: 50px;
+                background: red;
+                margin-bottom: 6px;
+            }
+        }
+    }
+}
+
+.wrapper {
+    width: 100%;
+    overflow: hidden;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 120px;
+}
+
+
+
+
+.navbar-top {
+    width: 100%;
+    background: white;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.31);
+    padding-left: 140px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+    .searchBar {
+        min-width: 200px;
+        width: 60%;
+        padding: 6px;
+        margin-top: 10px;
+        border-radius: 50px;
+        border: 1px solid #f1f1f1;
+        background: #f1f1f1;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    ul {
+        padding: 0;
+
+        li {
+            padding: 12px;
+            list-style: none;
+        }
+    }
+}

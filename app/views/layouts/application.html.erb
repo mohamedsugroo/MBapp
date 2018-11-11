@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= content_for?(:title) ? content_for(:title) : "Manga Bunny" %></title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <link href="https://vjs.zencdn.net/7.3.0/video-js.css" rel="stylesheet">
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+  </head>
+
+  <body>
+    <aside class="navbar">
+      <%= render 'navs/normal' %>
+    </aside>
+
+    <%= render 'navs/topnav' %>
+
+    <div class="wrapper">
+      <%= yield %>
+      <%= render 'navs/footer' %>
+    </div>
+
+    <script src="https://vjs.zencdn.net/7.3.0/video.js"></script>
+  </body>
+</html>

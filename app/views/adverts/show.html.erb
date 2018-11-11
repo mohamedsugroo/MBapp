@@ -1,0 +1,27 @@
+<div class="container">
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @advert.name %>
+</p>
+
+<p>
+  <strong>Ad code:</strong>
+  <%= @advert.ad_code %>
+</p>
+
+<p>
+  <strong>Start date:</strong>
+  <%= @advert.start_date %>
+</p>
+
+<p>
+  <strong>End date:</strong>
+  <%= @advert.end_date %>
+</p>
+
+<%= link_to 'Edit', edit_advert_path(@advert) %> |
+<%= link_to 'Back', adverts_path %>
+
+</div>

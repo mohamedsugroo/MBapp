@@ -1,0 +1,25 @@
+<div class="article_footer">
+      <p>
+        <strong>
+            source : <a href="<%= @post.source_link %>">
+                <% @post.sites.each do |site| %>
+                    <%= site.name%>
+                <% end %>
+            </a>
+        </strong>
+      </p>
+
+      <div class="tags">
+        <% @post.tags.each do |tag|%>
+            <span class="badge badge-light"><%= tag %></span>
+        <% end %>
+      </div>
+
+      <p>
+        <%# <strong>Site:</strong> %>
+        <%#= @post.site_id %>
+      </p>
+
+      <%#= link_to 'Edit', edit_post_path(@post) %>
+      <%#= link_to 'Back', posts_path %>
+</div>

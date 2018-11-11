@@ -1,0 +1,32 @@
+<%- title "Reading #{@post.title}" %>
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 article">
+      <div class="catcontainer" >
+        <strong class="category"> Category </strong>
+      </div>
+      <h1 class="article_title">
+        <%= @post.title.html_safe %>
+      </h1>
+
+      <hr>
+      <%= render 'posts/info' %>
+      <hr>
+
+      <%#= image_tag @post.featuredmedia %>
+
+      <div class="article_conetent">
+        <%= @post.content.html_safe %>
+      </div>
+
+      <%= render 'posts/postfooter'%>
+    </div>
+
+    <div class="col">
+      <%= render 'posts/googlead' %>
+    </div>
+  </div>
+</div>
+<div class="newgoals">
+
+</div>

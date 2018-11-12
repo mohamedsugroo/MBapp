@@ -19,6 +19,8 @@ aside.navbar {
     }
 
     nav.sideNav {
+        padding: 0;
+        margin: 0;
         ul {
             padding: 0;
             margin: 0;
@@ -27,10 +29,27 @@ aside.navbar {
                 width: 40px;
                 height: 40px;
                 border-radius: 50px;
-                background: red;
+                background: #5f27cd;
                 margin-bottom: 6px;
             }
         }
+
+        .hidden_site_name {
+            position: absolute;
+            margin-left: -600vw;
+        }
+        .logo {
+            width: 40px;
+            height: auto;
+            position: absolute;
+            top: 12px;
+            font-weight: 900;
+            font-size: 1.8rem;
+            line-height: 31px;
+            text-align: center;
+            color: #5f27cd;
+
+        } 
     }
 }
 
@@ -48,7 +67,7 @@ aside.navbar {
 .navbar-top {
     width: 100%;
     background: white;
-    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.31);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.16);
     padding-left: 140px;
     position: fixed;
     right: 0;

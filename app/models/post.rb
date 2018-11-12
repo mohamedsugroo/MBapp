@@ -11,6 +11,7 @@ class Post
   field :author_name, type: String
   field :author_avatar, type: String
   field :tags
+  field :category, type: String
   field :author_avatars
   field :author, type: String
   field :created_at, type: String
@@ -31,6 +32,5 @@ class Post
   def sites
     Site.where(id: self.site_id)
   end
-  
   
 end

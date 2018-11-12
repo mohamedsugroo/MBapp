@@ -1,3 +1,6 @@
+* {
+    transition: all .3s ease;
+}
 .advertisment {
     width: 350px;
     height: 600px;
@@ -9,4 +12,10 @@
     color: white;
     padding: 12px;
     float: right;
+}
+
+.fixedAdvert {
+    background: #f1f1f1;
+    position: fixed;
+    top: 65px;
 }

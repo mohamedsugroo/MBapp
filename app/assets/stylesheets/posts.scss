@@ -26,6 +26,17 @@
         margin-bottom: 20px;
     }
 
+    .tags {
+        .badge-tags {
+            padding: 6px;
+            background: #ff7f50;
+            color: #ffffff;
+            border-radius: 50px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+
     .article_title {
         padding: 0;
         margin: 0;
@@ -147,6 +158,43 @@
 .newgoals {
     border-top: 1px solid #f1f1f1;
     width: 100%;
-    height: 400px;
+    height: auto;
+    min-height: 400px;
     margin-top: 20px;
+    margin-bottom: 400px;
+    background: #5f27cd;
+    position: relative;
+    z-index: 90;
+
+    .p30 {
+        padding: 30px;
+    }
+    
+    .article_card {
+        background: white;
+        height: 310px;
+    }
+    
+    a {
+        text-decoration: none;
+        color: inherit;
+        outline: none;
+
+        &:hover {
+            text-decoration: none;
+            color: inherit;
+            outline: none;
+        }
+    }
+
+    .time_ago {
+        background: #ee5253;
+        color: #f1f1f1;
+        padding: 4px;
+        padding-left: 12px;
+        padding-right: 12px;
+        border-radius: 3px;
+        text-transform: uppercase;
+    }
 }
+

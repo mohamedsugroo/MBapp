@@ -8,10 +8,11 @@
             </a>
         </strong>
       </p>
+      <hr>
 
       <div class="tags">
         <% @post.tags.each do |tag|%>
-            <span class="badge badge-light"><%= tag %></span>
+            <label class="badge-tags"><%= tag %></label>
         <% end %>
       </div>
 

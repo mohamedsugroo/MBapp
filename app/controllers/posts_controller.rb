@@ -6,6 +6,8 @@ class PostsController < ApplicationController
   end
 
   def show
+    @relatedsamecontents = Post.all.limit(3)
+    
   end
 
   def new

@@ -1,0 +1,26 @@
+<div class="container black-bg p30">
+    <div class="row">
+        
+        <script type="text/javascript">
+            let related = <%= raw(@relatedsamecontents.to_json) %>
+            console.log(related)
+        </script>
+        <% @relatedsamecontents.each do |related| %>
+            <div class="col">
+                <a href="<%= post_path(related)%>">
+                    <div class="article_card">
+                        <div class="featured" style="background-image: url(<%= related.featuredmedia %>)"></div>
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <%= truncate(related.title.html_safe, length: 50, :omission => "..." , :escape => false) %>
+                            </h5>
+                            <label class="time_ago">
+                                <%= time_ago_in_words(related.created_at) %>
+                            </label>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        <% end %>
+    </div>
+</div>
